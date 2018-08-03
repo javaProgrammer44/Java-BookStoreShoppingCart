@@ -43,7 +43,7 @@ public class BookDAO {
     }
 
     public ArrayList<Book> listAllBooks() {
-      ArrayList<Book> listBook = new ArrayList<>();
+      ArrayList<Book> listBook = new ArrayList<Book>();
 
       String sql = "SELECT * FROM book";
 

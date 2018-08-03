@@ -41,13 +41,10 @@ public class CartController extends HttpServlet {
 
 		// Do different things depending on the action (or path requested)
 		try {
-			switch(action) {
-				case "/addcart":
-					 addToCart(request, response);
-           break;
-        default:
-           break;
+			if(action.equals("/addcart")) {
+				addToCart(request, response);
 			}
+			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

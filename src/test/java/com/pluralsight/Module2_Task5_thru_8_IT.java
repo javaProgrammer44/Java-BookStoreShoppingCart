@@ -141,7 +141,7 @@ public class Module2_Task5_thru_8_IT extends Mockito {
 
 			 Collection<Invocation> invocations = mockingDetails.getInvocations();
 
-			 List<String> methodsCalled = new ArrayList<>();
+			 List<String> methodsCalled = new ArrayList<String>();
 			 for (Invocation anInvocation : invocations) {
 			   methodsCalled.add(anInvocation.getMethod().getName());
 			 }
