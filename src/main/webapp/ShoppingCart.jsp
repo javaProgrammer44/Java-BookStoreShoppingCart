@@ -33,8 +33,9 @@
 				<c:forEach items="${cart.cartItems}" var="cartItem">
 					<tr>
 						<form name="cart_form" action="/cart/update">
+
 							<input type="hidden" name="index"
-								value="<c:out value='${loop.index }'/> "/ >
+                        								value="${ cartItem.getId() }"  />
 							<td>${ cartItem.getTitle() }</td>
 							<td>${ cartItem.getAuthor() }</td>
 							<td><fmt:formatNumber value="${ cartItem.getPrice() }"
